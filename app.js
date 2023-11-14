@@ -19,6 +19,7 @@ app.get("/confirm", function (request, res) {
 });
 
 app.get("/restaurants", function (req, res) {
+  //fs used because this project doesn't have a real database
   const filePath = path.join(__dirname, "data", "restaurants.json"); // configure the location of the json
   const fileData = fs.readFileSync(filePath); // read the json file
   const storedRestaurants = JSON.parse(fileData); // parse data into json
