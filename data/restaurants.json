@@ -1,16 +1,1 @@
-[
-  {
-    "name": "Pizza AY",
-    "address": "Moerstraat 16 w 2",
-    "cuisine": "Turkish / Italian",
-    "website": "https://portfolio-website-yilmaz-ahmet.netlify.app/",
-    "description": "amazing mixed food"
-  },
-  {
-    "name": "test2",
-    "address": "testing street 6969",
-    "cuisine": "Mexican",
-    "website": "https://www.linkedin.com/in/ahmet-yilmaz-0b4288210",
-    "description": "amazing!"
-  }
-]
+[{"name":"Pizza AY","address":"Moerstraat 16 w 2","cuisine":"Turkish / Italian","website":"https://portfolio-website-yilmaz-ahmet.netlify.app/","description":"amazing mixed food"},{"name":"test2","address":"testing street 6969","cuisine":"Mexican","website":"https://www.linkedin.com/in/ahmet-yilmaz-0b4288210","description":"amazing!"},{"name":"restaurant3","address":"testing street 45889","cuisine":"American Quizin","website":"https://subtle-malabi-7d1606.netlify.app/","description":"amazing shit!"}]

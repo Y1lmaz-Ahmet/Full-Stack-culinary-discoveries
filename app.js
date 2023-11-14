@@ -19,7 +19,10 @@ app.get("/confirm", function (request, res) {
 });
 
 app.get("/restaurants", function (req, res) {
-  res.render("restaurants");
+  const filePath = path.join(__dirname, "data", "restaurants.json"); // configure the location of the json
+  const fileData = fs.readFileSync(filePath); // read the json file
+  const storedRestaurants = JSON.parse(fileData); // parse data into json
+  res.render("restaurants", { numberOfRestaurants: storedRestaurants.length });
 });
 
 app.get("/about", function (req, res) {
