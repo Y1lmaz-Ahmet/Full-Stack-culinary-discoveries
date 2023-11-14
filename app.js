@@ -22,7 +22,10 @@ app.get("/restaurants", function (req, res) {
   const filePath = path.join(__dirname, "data", "restaurants.json"); // configure the location of the json
   const fileData = fs.readFileSync(filePath); // read the json file
   const storedRestaurants = JSON.parse(fileData); // parse data into json
-  res.render("restaurants", { numberOfRestaurants: storedRestaurants.length });
+  res.render("restaurants", {
+    numberOfRestaurants: storedRestaurants.length,
+    restaurants: storedRestaurants,
+  });
 });
 
 app.get("/about", function (req, res) {
