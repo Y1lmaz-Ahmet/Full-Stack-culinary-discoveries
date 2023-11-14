@@ -1,10 +1,10 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require("fs"); // module enables interacting with the file system
+const path = require("path"); // module provides utilities for working with file and directory paths
 
-const express = require("express");
+const express = require("express"); // Creates an Express application
 const app = express();
 
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views")); // Join all arguments together and normalize the resulting path
 app.set("view engine", "ejs"); //EJS template engine
 
 app.use(express.static("public")); // accessing STATIC files
